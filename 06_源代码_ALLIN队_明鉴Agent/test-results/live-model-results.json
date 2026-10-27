@@ -1,0 +1,120 @@
+[
+  {
+    "input": "先看看我手头还有多少，再给室友打两百块",
+    "expected": {
+      "text": "先看看我手头还有多少，再给室友打两百块",
+      "tools": [
+        "balance",
+        "transfer"
+      ],
+      "amount": 20000
+    },
+    "kind": "plan",
+    "tools": [
+      "balance",
+      "transfer"
+    ],
+    "passed": true,
+    "telemetry": {
+      "provider": "local_llm",
+      "model": "Qwen3-1.7B Q8_0",
+      "latencyMs": 13410,
+      "tokens": 51
+    }
+  },
+  {
+    "input": "帮我看看这个月的钱都花到哪里了，有没有重复扣费",
+    "expected": {
+      "text": "帮我看看这个月的钱都花到哪里了，有没有重复扣费",
+      "tools": [
+        "bills"
+      ]
+    },
+    "kind": "plan",
+    "tools": [
+      "bills"
+    ],
+    "passed": true,
+    "telemetry": {
+      "provider": "local_llm",
+      "model": "Qwen3-1.7B Q8_0",
+      "latencyMs": 5386,
+      "tokens": 72
+    }
+  },
+  {
+    "input": "我有哪些会员在扣钱？把视频那个停掉",
+    "expected": {
+      "text": "我有哪些会员在扣钱？把视频那个停掉",
+      "tools": [
+        "subscriptions",
+        "cancel_subscription"
+      ]
+    },
+    "kind": "plan",
+    "tools": [
+      "subscriptions",
+      "cancel_subscription"
+    ],
+    "passed": true,
+    "telemetry": {
+      "provider": "local_llm",
+      "model": "Qwen3-1.7B Q8_0",
+      "latencyMs": 3656,
+      "tokens": 48
+    }
+  },
+  {
+    "input": "给妈妈转点钱",
+    "expected": {
+      "text": "给妈妈转点钱",
+      "kind": "clarification"
+    },
+    "kind": "clarification",
+    "passed": true,
+    "message": "请问要转多少元？",
+    "telemetry": {
+      "provider": "local_llm",
+      "model": "Qwen3-1.7B Q8_0",
+      "latencyMs": 1570,
+      "tokens": 20
+    }
+  },
+  {
+    "input": "就一千二百元吧",
+    "expected": {
+      "text": "就一千二百元吧",
+      "tools": [
+        "transfer"
+      ],
+      "amount": 120000
+    },
+    "kind": "plan",
+    "tools": [
+      "transfer"
+    ],
+    "passed": true,
+    "telemetry": {
+      "provider": "local_llm",
+      "model": "Qwen3-1.7B Q8_0",
+      "latencyMs": 4264,
+      "tokens": 52
+    }
+  },
+  {
+    "input": "先别转钱，我只是问一下你能做什么",
+    "expected": {
+      "text": "先别转钱，我只是问一下你能做什么",
+      "kind": "chat"
+    },
+    "kind": "chat",
+    "passed": true,
+    "message": "我能查询模拟余额、分析本月账单、规划联系人转账和管理订阅。资金操作会先展示参数及风险，等待你的授权。",
+    "telemetry": {
+      "provider": "local_llm",
+      "model": "Qwen3-1.7B Q8_0",
+      "latencyMs": 2913,
+      "tokens": 35
+    }
+  }
+]

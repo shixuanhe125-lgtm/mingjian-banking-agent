@@ -1,0 +1,18 @@
+明鉴 Agent 本地 AI 运行组件清单
+
+1. Qwen3-1.7B Q8_0 GGUF
+文件：models/Qwen3-1.7B-Q8_0.gguf
+来源：https://modelscope.cn/models/Qwen/Qwen3-1.7B-GGUF
+SHA-256：061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a
+许可：Apache-2.0，见 licenses/Qwen-APACHE-2.0.txt
+
+2. llama.cpp b11918 Windows CPU x64
+来源：https://github.com/ggml-org/llama.cpp/releases/tag/b11918
+下载包 SHA-256：ff1a38f2bae1c9a1c36097b208a6be4dd24c86417c63c60daa77f6fca8d8f8fa
+许可：MIT，见 licenses/llama-MIT.txt
+
+3. Node.js v24.16.0 Windows x64
+来源：https://nodejs.org/
+许可：见 licenses/Node-LICENSE.txt
+
+本产品不调用付费云端模型 API。上述模型与程序均在本机运行。

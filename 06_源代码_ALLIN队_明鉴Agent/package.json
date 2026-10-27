@@ -1,0 +1,9 @@
+{
+  "name": "mingjian-banking-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "明鉴银行助手：本地模拟银行与可解释授权执行",
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": { "start": "node server.mjs", "test": "node --test tests/*.test.mjs" }
+}

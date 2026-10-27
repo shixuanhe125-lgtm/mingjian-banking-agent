@@ -1,0 +1,29 @@
+{
+  "results": [
+    {
+      "name": "黄色计划与绿色查询",
+      "status": "passed"
+    },
+    {
+      "name": "修改金额与权限差异",
+      "status": "passed"
+    },
+    {
+      "name": "账单分析",
+      "status": "passed"
+    },
+    {
+      "name": "订阅查询与取消",
+      "status": "passed"
+    },
+    {
+      "name": "审计页面与链验证",
+      "status": "passed"
+    },
+    {
+      "name": "窄屏无横向溢出",
+      "status": "passed"
+    }
+  ],
+  "pageErrors": []
+}
